@@ -1,4 +1,4 @@
-# cleartxn — Agentic Transaction Enrichment (design spec)
+# matlas — Agentic Transaction Enrichment (design spec)
 
 Date: 2026-07-03
 Status: approved for implementation planning
@@ -179,12 +179,12 @@ Razorpay VPA→MCC API.
 ## Repo layout
 
 ```
-cleartxn/
-├── pyproject.toml            # hatchling; console_scripts → cleartxn.cli:app
+matlas/
+├── pyproject.toml            # hatchling; console_scripts → matlas.cli:app
 ├── README.md                 # US benchmark hero + two-rails portability demo + privacy stance
 ├── LICENSE (Apache-2.0), CONTRIBUTING.md, CHANGELOG.md
 ├── .github/workflows/ci.yml  # lint+type+test, no live API (record/replay cassettes only)
-├── src/cleartxn/
+├── src/matlas/
 │   ├── core/
 │   │   ├── schema.py          # EnrichedTransaction (region, rail, consistency_check_applicable), Evidence
 │   │   ├── shared_category.py # the region-agnostic SharedCategory enum
@@ -224,12 +224,12 @@ and `regions/india/normalizer.py` (the entity-resolution moat), `data/gold/gold_
 `confidence_threshold=0.6`, `max_agent_iterations=5`.
 
 **CLI (Typer):**
-- `cleartxn enrich "<descriptor>" [--region auto|us|india]`
-- `cleartxn enrich-csv in.csv -o out.csv`
-- `cleartxn benchmark [--region us]`
-- `cleartxn serve --api|--mcp`
+- `matlas enrich "<descriptor>" [--region auto|us|india]`
+- `matlas enrich-csv in.csv -o out.csv`
+- `matlas benchmark [--region us]`
+- `matlas serve --api|--mcp`
 
-**Surfaces:** Python library (`from cleartxn import EnrichmentAgent`), REST API
+**Surfaces:** Python library (`from matlas import EnrichmentAgent`), REST API
 (FastAPI), MCP server (exposes `enrich`). All three are region-agnostic; region is
 chosen by the router or an explicit flag.
 
@@ -278,13 +278,13 @@ statements. All data provenance is documented. License: Apache-2.0.
    `core/loop.py` over recorded cassettes; asserts `stop_reason` branching, tool
    dispatch, consistency-contradiction feedback, `is_unknown`, and India's P2P
    `consistency_applicable = False` branch. No live API.
-3. **Live enrichment** (needs `ANTHROPIC_API_KEY`): `cleartxn enrich "SQ *COFFEE
-   0432 SAN FRAN CA" --region us` and `cleartxn enrich
+3. **Live enrichment** (needs `ANTHROPIC_API_KEY`): `matlas enrich "SQ *COFFEE
+   0432 SAN FRAN CA" --region us` and `matlas enrich
    "UPI/DR/408.../SWIGGY/YESB/Payment" --region india` → structured records with
    evidence; confirm an ambiguous case fires ≥1 tool call plus a consistency
    self-correction (proves the loop is real), and a UPI P2P case returns
    `PERSONAL_TRANSFER` with the consistency check marked not applicable.
-4. **The trending hook:** `cleartxn benchmark --region us` → merchant/category/MCC
+4. **The trending hook:** `matlas benchmark --region us` → merchant/category/MCC
    accuracy, cost-per-transaction, and mean tool-calls-per-transaction (the last
    metric proves the loop earns its keep). This is the README hero and is
    reproducible from cassettes without spend.
@@ -312,7 +312,7 @@ statements. All data provenance is documented. License: Apache-2.0.
 - **Week 4 — polish + launch.** README (US benchmark hero, two-rails portability
   demo, privacy stance), CONTRIBUTING (how to add gold rows / add a RegionPack),
   docs. Thin India gold fixture (~75–150 rows) reported honestly as a smoke test.
-  Tune confidence calibration. Publish to PyPI as `cleartxn`; first release.
+  Tune confidence calibration. Publish to PyPI as `matlas`; first release.
 - **If time slips:** cut the India gold fixture down to a demo — never cut the
   India normalizer or VPA table, since those are the portability proof; the
   fixture is garnish.
