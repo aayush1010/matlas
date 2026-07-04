@@ -58,7 +58,9 @@ class EnrichmentAgent:
         return tools
 
     def _parse_final(self, response: Any) -> ProposedEnrichment:
-        text = "".join(block.text for block in response.content if block.type == "text")
+        text = "".join(block.text for block in response.content if block.type == "text").strip()
+        if text.startswith("```"):
+            text = text.strip("`").removeprefix("json").strip()
         return TypeAdapter(ProposedEnrichment).validate_json(text)
 
     def run(self, raw: str, region: str) -> EnrichedTransaction:

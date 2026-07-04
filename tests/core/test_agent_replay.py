@@ -16,11 +16,13 @@ def _tool_use_response(tool_use_id="t1", merchant_str="STARBUCKS"):
     return SimpleNamespace(stop_reason="tool_use", content=[block])
 
 
-def _end_turn_response(merchant, category, confidence):
+def _end_turn_response(merchant, category, confidence, fenced=False):
     text = (
         f'{{"merchant": "{merchant}", "category": "{category.value}", '
         f'"confidence": {confidence}}}'
     )
+    if fenced:
+        text = f"```json\n{text}\n```"
     block = SimpleNamespace(type="text", text=text)
     return SimpleNamespace(stop_reason="end_turn", content=[block])
 
@@ -46,6 +48,17 @@ def test_straightforward_agreement():
     result = agent.run(RAW, "US")
     assert result.category is SharedCategory.FOOD_AND_DRINK
     assert result.consistency_ok is True
+    assert result.is_unknown is False
+
+
+def test_final_answer_wrapped_in_markdown_fence_still_parses():
+    responses = [
+        _tool_use_response(),
+        _end_turn_response("Starbucks", SharedCategory.FOOD_AND_DRINK, 0.9, fenced=True),
+    ]
+    agent = _agent(responses)
+    result = agent.run(RAW, "US")
+    assert result.category is SharedCategory.FOOD_AND_DRINK
     assert result.is_unknown is False
 
 
