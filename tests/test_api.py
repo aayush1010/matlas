@@ -1,6 +1,7 @@
 from fastapi.testclient import TestClient
 
 import matlas.api as api_module
+import matlas.batch as batch_module
 from matlas.core.schema import EnrichedTransaction
 
 
@@ -57,7 +58,9 @@ def test_enrich_invalid_region_returns_400(monkeypatch):
 
 
 def test_enrich_batch(monkeypatch):
-    monkeypatch.setattr(api_module, "EnrichmentAgent", _FakeAgent)
+    # exact gazetteer hits skip the LLM tier entirely (see test_batch.py),
+    # so only the fuzzy-match descriptor exercises the mocked agent here.
+    monkeypatch.setattr(batch_module, "EnrichmentAgent", _FakeAgent)
     resp = client.post(
         "/enrich/batch",
         json={"descriptors": ["SQ *STARBUCKS #4521 SEATTLE WA", "SQ *COFFEE 0432 SAN FRAN CA"]},
@@ -65,4 +68,10 @@ def test_enrich_batch(monkeypatch):
     assert resp.status_code == 200
     body = resp.json()
     assert len(body) == 2
-    assert all(row["merchant"] == "Starbucks" for row in body)
+    assert body[0]["merchant"] == "Starbucks"
+    assert body[1]["merchant"] == "Starbucks"  # from _FakeAgent's canned response
+
+
+def test_enrich_batch_invalid_region_returns_400():
+    resp = client.post("/enrich/batch", json={"descriptors": ["whatever"], "region": "mars"})
+    assert resp.status_code == 400

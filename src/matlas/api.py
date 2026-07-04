@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
+from matlas.batch import enrich_batch_tiered
 from matlas.config import Settings
 from matlas.core.loop import EnrichmentAgent
 from matlas.core.schema import EnrichedTransaction
@@ -42,9 +43,11 @@ def enrich(req: EnrichRequest) -> EnrichedTransaction:
 
 @app.post("/enrich/batch")
 def enrich_batch(req: EnrichBatchRequest) -> list[EnrichedTransaction]:
-    return [
-        _enrich_one(EnrichRequest(descriptor=d, region=req.region)) for d in req.descriptors
-    ]
+    override = _REGION_ALIASES.get(req.region.lower(), req.region) if req.region else None
+    try:
+        return enrich_batch_tiered(req.descriptors, Settings(), _PACKS, override)
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e)) from e
 
 
 @app.get("/healthz")
