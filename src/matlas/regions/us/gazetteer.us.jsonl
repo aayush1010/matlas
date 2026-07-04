@@ -124,3 +124,71 @@
 {"key": "coned", "canonical": "Con Edison", "category": "rent_and_utilities", "mcc": "4900"}
 {"key": "best western", "canonical": "Best Western", "category": "travel", "mcc": "7011"}
 {"key": "holiday inn", "canonical": "Holiday Inn", "category": "travel", "mcc": "7011"}
+{"key": "wendys", "canonical": "Wendy's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "wendy's", "canonical": "Wendy's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "burger king", "canonical": "Burger King", "category": "food_and_drink", "mcc": "5814"}
+{"key": "taco bell", "canonical": "Taco Bell", "category": "food_and_drink", "mcc": "5814"}
+{"key": "kfc", "canonical": "KFC", "category": "food_and_drink", "mcc": "5814"}
+{"key": "subway", "canonical": "Subway", "category": "food_and_drink", "mcc": "5814"}
+{"key": "popeyes", "canonical": "Popeyes", "category": "food_and_drink", "mcc": "5814"}
+{"key": "panera bread", "canonical": "Panera Bread", "category": "food_and_drink", "mcc": "5814"}
+{"key": "panera", "canonical": "Panera Bread", "category": "food_and_drink", "mcc": "5814"}
+{"key": "panda express", "canonical": "Panda Express", "category": "food_and_drink", "mcc": "5814"}
+{"key": "dominos", "canonical": "Domino's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "domino's pizza", "canonical": "Domino's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "pizza hut", "canonical": "Pizza Hut", "category": "food_and_drink", "mcc": "5814"}
+{"key": "papa johns", "canonical": "Papa John's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "papa john's", "canonical": "Papa John's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "five guys", "canonical": "Five Guys", "category": "food_and_drink", "mcc": "5814"}
+{"key": "in-n-out", "canonical": "In-N-Out Burger", "category": "food_and_drink", "mcc": "5814"}
+{"key": "in-n-out burger", "canonical": "In-N-Out Burger", "category": "food_and_drink", "mcc": "5814"}
+{"key": "chick-fil-a", "canonical": "Chick-fil-A", "category": "food_and_drink", "mcc": "5814"}
+{"key": "chickfila", "canonical": "Chick-fil-A", "category": "food_and_drink", "mcc": "5814"}
+{"key": "peets coffee", "canonical": "Peet's Coffee", "category": "food_and_drink", "mcc": "5814"}
+{"key": "peet's coffee", "canonical": "Peet's Coffee", "category": "food_and_drink", "mcc": "5814"}
+{"key": "dutch bros", "canonical": "Dutch Bros Coffee", "category": "food_and_drink", "mcc": "5814"}
+{"key": "safeway", "canonical": "Safeway", "category": "food_and_drink", "mcc": "5411"}
+{"key": "kroger", "canonical": "Kroger", "category": "food_and_drink", "mcc": "5411"}
+{"key": "publix", "canonical": "Publix", "category": "food_and_drink", "mcc": "5411"}
+{"key": "aldi", "canonical": "Aldi", "category": "food_and_drink", "mcc": "5411"}
+{"key": "albertsons", "canonical": "Albertsons", "category": "food_and_drink", "mcc": "5411"}
+{"key": "chevron", "canonical": "Chevron", "category": "transportation", "mcc": "5541"}
+{"key": "bp", "canonical": "BP", "category": "transportation", "mcc": "5541"}
+{"key": "bp gas station", "canonical": "BP", "category": "transportation", "mcc": "5541"}
+{"key": "marathon petroleum", "canonical": "Marathon", "category": "transportation", "mcc": "5541"}
+{"key": "marathon gas", "canonical": "Marathon", "category": "transportation", "mcc": "5541"}
+{"key": "speedway", "canonical": "Speedway", "category": "transportation", "mcc": "5541"}
+{"key": "sunoco", "canonical": "Sunoco", "category": "transportation", "mcc": "5541"}
+{"key": "valero", "canonical": "Valero", "category": "transportation", "mcc": "5541"}
+{"key": "phillips 66", "canonical": "Phillips 66", "category": "transportation", "mcc": "5541"}
+{"key": "sams club", "canonical": "Sam's Club", "category": "general_merchandise", "mcc": "5300"}
+{"key": "sam's club", "canonical": "Sam's Club", "category": "general_merchandise", "mcc": "5300"}
+{"key": "bjs wholesale", "canonical": "BJ's Wholesale", "category": "general_merchandise", "mcc": "5300"}
+{"key": "bj's wholesale club", "canonical": "BJ's Wholesale", "category": "general_merchandise", "mcc": "5300"}
+{"key": "kohls", "canonical": "Kohl's", "category": "general_merchandise", "mcc": "5311"}
+{"key": "kohl's", "canonical": "Kohl's", "category": "general_merchandise", "mcc": "5311"}
+{"key": "jcpenney", "canonical": "JCPenney", "category": "general_merchandise", "mcc": "5311"}
+{"key": "jc penney", "canonical": "JCPenney", "category": "general_merchandise", "mcc": "5311"}
+{"key": "nordstrom", "canonical": "Nordstrom", "category": "general_merchandise", "mcc": "5311"}
+{"key": "dillards", "canonical": "Dillard's", "category": "general_merchandise", "mcc": "5311"}
+{"key": "dillard's", "canonical": "Dillard's", "category": "general_merchandise", "mcc": "5311"}
+{"key": "apple store", "canonical": "Apple Store", "category": "general_merchandise", "mcc": "5732"}
+{"key": "apple.com/bill", "canonical": "Apple Store", "category": "general_merchandise", "mcc": "5732"}
+{"key": "micro center", "canonical": "Micro Center", "category": "general_merchandise", "mcc": "5732"}
+{"key": "gamestop", "canonical": "GameStop", "category": "general_merchandise", "mcc": "5945"}
+{"key": "rite aid", "canonical": "Rite Aid", "category": "medical", "mcc": "5912"}
+{"key": "american airlines", "canonical": "American Airlines", "category": "travel", "mcc": "4511"}
+{"key": "southwest airlines", "canonical": "Southwest Airlines", "category": "travel", "mcc": "4511"}
+{"key": "southwest", "canonical": "Southwest Airlines", "category": "travel", "mcc": "4511"}
+{"key": "jetblue", "canonical": "JetBlue", "category": "travel", "mcc": "4511"}
+{"key": "alaska airlines", "canonical": "Alaska Airlines", "category": "travel", "mcc": "4511"}
+{"key": "chase", "canonical": "Chase", "category": "bank_fees", "mcc": "6011"}
+{"key": "jpmorgan chase", "canonical": "Chase", "category": "bank_fees", "mcc": "6011"}
+{"key": "bank of america", "canonical": "Bank of America", "category": "bank_fees", "mcc": "6011"}
+{"key": "bofa", "canonical": "Bank of America", "category": "bank_fees", "mcc": "6011"}
+{"key": "wells fargo", "canonical": "Wells Fargo", "category": "bank_fees", "mcc": "6011"}
+{"key": "citibank", "canonical": "Citibank", "category": "bank_fees", "mcc": "6011"}
+{"key": "citi", "canonical": "Citibank", "category": "bank_fees", "mcc": "6011"}
+{"key": "total wine", "canonical": "Total Wine & More", "category": "general_merchandise", "mcc": "5921"}
+{"key": "total wine & more", "canonical": "Total Wine & More", "category": "general_merchandise", "mcc": "5921"}
+{"key": "bevmo", "canonical": "BevMo", "category": "general_merchandise", "mcc": "5921"}
