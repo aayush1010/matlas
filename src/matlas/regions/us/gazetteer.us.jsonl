@@ -1,0 +1,36 @@
+{"key": "starbucks", "canonical": "Starbucks", "category": "food_and_drink", "mcc": "5814"}
+{"key": "sbux", "canonical": "Starbucks", "category": "food_and_drink", "mcc": "5814"}
+{"key": "blue bottle coffee", "canonical": "Blue Bottle Coffee", "category": "food_and_drink", "mcc": "5814"}
+{"key": "blue bottle", "canonical": "Blue Bottle Coffee", "category": "food_and_drink", "mcc": "5814"}
+{"key": "whole foods market", "canonical": "Whole Foods Market", "category": "food_and_drink", "mcc": "5411"}
+{"key": "whole foods", "canonical": "Whole Foods Market", "category": "food_and_drink", "mcc": "5411"}
+{"key": "wfm", "canonical": "Whole Foods Market", "category": "food_and_drink", "mcc": "5411"}
+{"key": "trader joes", "canonical": "Trader Joe's", "category": "food_and_drink", "mcc": "5411"}
+{"key": "delta air lines", "canonical": "Delta Air Lines", "category": "travel", "mcc": "3058"}
+{"key": "delta airlines", "canonical": "Delta Air Lines", "category": "travel", "mcc": "3058"}
+{"key": "delta", "canonical": "Delta Air Lines", "category": "travel", "mcc": "3058"}
+{"key": "united airlines", "canonical": "United Airlines", "category": "travel", "mcc": "3000"}
+{"key": "united", "canonical": "United Airlines", "category": "travel", "mcc": "3000"}
+{"key": "marriott", "canonical": "Marriott", "category": "travel", "mcc": "3509"}
+{"key": "marriott hotels", "canonical": "Marriott", "category": "travel", "mcc": "3509"}
+{"key": "hilton hotels", "canonical": "Hilton", "category": "travel", "mcc": "3504"}
+{"key": "hilton", "canonical": "Hilton", "category": "travel", "mcc": "3504"}
+{"key": "uber", "canonical": "Uber", "category": "transportation", "mcc": "4121"}
+{"key": "uber trip", "canonical": "Uber", "category": "transportation", "mcc": "4121"}
+{"key": "lyft", "canonical": "Lyft", "category": "transportation", "mcc": "4121"}
+{"key": "netflix", "canonical": "Netflix", "category": "entertainment", "mcc": "5815"}
+{"key": "netflix.com", "canonical": "Netflix", "category": "entertainment", "mcc": "5815"}
+{"key": "spotify", "canonical": "Spotify", "category": "entertainment", "mcc": "5815"}
+{"key": "spotify usa", "canonical": "Spotify", "category": "entertainment", "mcc": "5815"}
+{"key": "amazon", "canonical": "Amazon", "category": "general_merchandise", "mcc": "5399"}
+{"key": "amzn mktp us", "canonical": "Amazon", "category": "general_merchandise", "mcc": "5399"}
+{"key": "amazon mktplace", "canonical": "Amazon", "category": "general_merchandise", "mcc": "5399"}
+{"key": "target", "canonical": "Target", "category": "general_merchandise", "mcc": "5310"}
+{"key": "cvs pharmacy", "canonical": "CVS Pharmacy", "category": "medical", "mcc": "5912"}
+{"key": "cvs/pharm", "canonical": "CVS Pharmacy", "category": "medical", "mcc": "5912"}
+{"key": "cvs", "canonical": "CVS Pharmacy", "category": "medical", "mcc": "5912"}
+{"key": "walgreens", "canonical": "Walgreens", "category": "medical", "mcc": "5912"}
+{"key": "at&t", "canonical": "AT&T", "category": "rent_and_utilities", "mcc": "4814"}
+{"key": "at&t*bill payment", "canonical": "AT&T", "category": "rent_and_utilities", "mcc": "4814"}
+{"key": "comcast", "canonical": "Comcast", "category": "rent_and_utilities", "mcc": "4899"}
+{"key": "comcast cable comm", "canonical": "Comcast", "category": "rent_and_utilities", "mcc": "4899"}
