@@ -1,0 +1,23 @@
+{"key": "swiggy", "canonical": "Swiggy", "category": "food_and_drink"}
+{"key": "zomato", "canonical": "Zomato", "category": "food_and_drink"}
+{"key": "dominos", "canonical": "Domino's Pizza", "category": "food_and_drink"}
+{"key": "bigbasket", "canonical": "BigBasket", "category": "food_and_drink"}
+{"key": "zepto", "canonical": "Zepto", "category": "food_and_drink"}
+{"key": "blinkit", "canonical": "Blinkit", "category": "food_and_drink"}
+{"key": "ola", "canonical": "Ola", "category": "transportation"}
+{"key": "olacabs", "canonical": "Ola", "category": "transportation"}
+{"key": "uber", "canonical": "Uber", "category": "transportation"}
+{"key": "rapido", "canonical": "Rapido", "category": "transportation"}
+{"key": "bookmyshow", "canonical": "BookMyShow", "category": "entertainment"}
+{"key": "netflix", "canonical": "Netflix", "category": "entertainment"}
+{"key": "hotstar", "canonical": "Disney+ Hotstar", "category": "entertainment"}
+{"key": "amazon", "canonical": "Amazon", "category": "general_merchandise"}
+{"key": "flipkart", "canonical": "Flipkart", "category": "general_merchandise"}
+{"key": "myntra", "canonical": "Myntra", "category": "general_merchandise"}
+{"key": "airtel", "canonical": "Airtel", "category": "rent_and_utilities"}
+{"key": "jio", "canonical": "Jio", "category": "rent_and_utilities"}
+{"key": "vodafoneidea", "canonical": "Vodafone Idea", "category": "rent_and_utilities"}
+{"key": "irctc", "canonical": "IRCTC", "category": "travel"}
+{"key": "makemytrip", "canonical": "MakeMyTrip", "category": "travel"}
+{"key": "apollopharmacy", "canonical": "Apollo Pharmacy", "category": "medical"}
+{"key": "practo", "canonical": "Practo", "category": "medical"}

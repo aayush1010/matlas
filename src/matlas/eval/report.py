@@ -4,8 +4,8 @@ from rich.table import Table
 from matlas.eval.harness import BenchmarkResult
 
 
-def render_report(result: BenchmarkResult) -> None:
-    table = Table(title="matlas benchmark")
+def render_report(result: BenchmarkResult, title: str = "matlas benchmark") -> None:
+    table = Table(title=title)
     table.add_column("metric")
     table.add_column("value")
     table.add_row("n", str(result.n))

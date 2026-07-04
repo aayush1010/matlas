@@ -42,3 +42,14 @@ def test_enrich_command_with_region_override(monkeypatch):
     assert result.exit_code == 0
     payload = json.loads(result.stdout)
     assert payload["region"] == "US"
+
+
+def test_enrich_command_with_india_region_override(monkeypatch):
+    monkeypatch.setattr(cli_module, "EnrichmentAgent", _FakeAgent)
+    result = runner.invoke(
+        cli_module.app,
+        ["UPI/DR/408123456789/SWIGGY/YESB/Payment", "--region", "india"],
+    )
+    assert result.exit_code == 0
+    payload = json.loads(result.stdout)
+    assert payload["region"] == "IN"
