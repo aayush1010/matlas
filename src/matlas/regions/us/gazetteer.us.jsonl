@@ -68,3 +68,59 @@
 {"key": "mcdonald's", "canonical": "McDonald's", "category": "food_and_drink", "mcc": "5814"}
 {"key": "dunkin", "canonical": "Dunkin", "category": "food_and_drink", "mcc": "5814"}
 {"key": "dunkin donuts", "canonical": "Dunkin", "category": "food_and_drink", "mcc": "5814"}
+{"key": "hertz", "canonical": "Hertz", "category": "travel", "mcc": "7512"}
+{"key": "hertz rent a car", "canonical": "Hertz", "category": "travel", "mcc": "7512"}
+{"key": "enterprise rent-a-car", "canonical": "Enterprise Rent-A-Car", "category": "travel", "mcc": "7512"}
+{"key": "enterprise", "canonical": "Enterprise Rent-A-Car", "category": "travel", "mcc": "7512"}
+{"key": "avis", "canonical": "Avis", "category": "travel", "mcc": "7512"}
+{"key": "avis rent a car", "canonical": "Avis", "category": "travel", "mcc": "7512"}
+{"key": "budget car rental", "canonical": "Budget Car Rental", "category": "travel", "mcc": "7512"}
+{"key": "budget rent a car", "canonical": "Budget Car Rental", "category": "travel", "mcc": "7512"}
+{"key": "gap", "canonical": "Gap", "category": "general_merchandise", "mcc": "5651"}
+{"key": "gap inc", "canonical": "Gap", "category": "general_merchandise", "mcc": "5651"}
+{"key": "old navy", "canonical": "Old Navy", "category": "general_merchandise", "mcc": "5651"}
+{"key": "american eagle", "canonical": "American Eagle", "category": "general_merchandise", "mcc": "5651"}
+{"key": "american eagle outfitters", "canonical": "American Eagle", "category": "general_merchandise", "mcc": "5651"}
+{"key": "banana republic", "canonical": "Banana Republic", "category": "general_merchandise", "mcc": "5651"}
+{"key": "foot locker", "canonical": "Foot Locker", "category": "general_merchandise", "mcc": "5661"}
+{"key": "footlocker", "canonical": "Foot Locker", "category": "general_merchandise", "mcc": "5661"}
+{"key": "dsw", "canonical": "DSW", "category": "general_merchandise", "mcc": "5661"}
+{"key": "designer shoe warehouse", "canonical": "DSW", "category": "general_merchandise", "mcc": "5661"}
+{"key": "dicks sporting goods", "canonical": "Dick's Sporting Goods", "category": "general_merchandise", "mcc": "5941"}
+{"key": "dick's sporting goods", "canonical": "Dick's Sporting Goods", "category": "general_merchandise", "mcc": "5941"}
+{"key": "build-a-bear", "canonical": "Build-A-Bear Workshop", "category": "general_merchandise", "mcc": "5945"}
+{"key": "build a bear workshop", "canonical": "Build-A-Bear Workshop", "category": "general_merchandise", "mcc": "5945"}
+{"key": "barnes & noble", "canonical": "Barnes & Noble", "category": "general_merchandise", "mcc": "5942"}
+{"key": "barnes and noble", "canonical": "Barnes & Noble", "category": "general_merchandise", "mcc": "5942"}
+{"key": "1-800-flowers", "canonical": "1-800-Flowers", "category": "general_merchandise", "mcc": "5992"}
+{"key": "1800flowers", "canonical": "1-800-Flowers", "category": "general_merchandise", "mcc": "5992"}
+{"key": "7-eleven", "canonical": "7-Eleven", "category": "food_and_drink", "mcc": "5499"}
+{"key": "7 eleven", "canonical": "7-Eleven", "category": "food_and_drink", "mcc": "5499"}
+{"key": "circle k", "canonical": "Circle K", "category": "food_and_drink", "mcc": "5499"}
+{"key": "planet fitness", "canonical": "Planet Fitness", "category": "personal_care", "mcc": "7997"}
+{"key": "la fitness", "canonical": "LA Fitness", "category": "personal_care", "mcc": "7997"}
+{"key": "petsmart", "canonical": "PetSmart", "category": "general_merchandise", "mcc": "5995"}
+{"key": "petco", "canonical": "Petco", "category": "general_merchandise", "mcc": "5995"}
+{"key": "staples", "canonical": "Staples", "category": "general_merchandise", "mcc": "5943"}
+{"key": "office depot", "canonical": "Office Depot", "category": "general_merchandise", "mcc": "5943"}
+{"key": "ikea", "canonical": "IKEA", "category": "general_merchandise", "mcc": "5712"}
+{"key": "ashley furniture", "canonical": "Ashley Furniture", "category": "general_merchandise", "mcc": "5712"}
+{"key": "ashley homestore", "canonical": "Ashley Furniture", "category": "general_merchandise", "mcc": "5712"}
+{"key": "autozone", "canonical": "AutoZone", "category": "transportation", "mcc": "5533"}
+{"key": "o'reilly auto parts", "canonical": "O'Reilly Auto Parts", "category": "transportation", "mcc": "5533"}
+{"key": "oreilly auto parts", "canonical": "O'Reilly Auto Parts", "category": "transportation", "mcc": "5533"}
+{"key": "mister car wash", "canonical": "Mister Car Wash", "category": "transportation", "mcc": "7542"}
+{"key": "laz parking", "canonical": "LAZ Parking", "category": "transportation", "mcc": "7523"}
+{"key": "the ups store", "canonical": "The UPS Store", "category": "general_services", "mcc": "4215"}
+{"key": "ups store", "canonical": "The UPS Store", "category": "general_services", "mcc": "4215"}
+{"key": "fedex office", "canonical": "FedEx Office", "category": "general_services", "mcc": "4215"}
+{"key": "fedex ofc", "canonical": "FedEx Office", "category": "general_services", "mcc": "4215"}
+{"key": "geico", "canonical": "GEICO", "category": "general_services", "mcc": "6300"}
+{"key": "state farm", "canonical": "State Farm", "category": "general_services", "mcc": "6300"}
+{"key": "progressive", "canonical": "Progressive", "category": "general_services", "mcc": "6300"}
+{"key": "pacific gas & electric", "canonical": "Pacific Gas & Electric", "category": "rent_and_utilities", "mcc": "4900"}
+{"key": "pg&e", "canonical": "Pacific Gas & Electric", "category": "rent_and_utilities", "mcc": "4900"}
+{"key": "con edison", "canonical": "Con Edison", "category": "rent_and_utilities", "mcc": "4900"}
+{"key": "coned", "canonical": "Con Edison", "category": "rent_and_utilities", "mcc": "4900"}
+{"key": "best western", "canonical": "Best Western", "category": "travel", "mcc": "7011"}
+{"key": "holiday inn", "canonical": "Holiday Inn", "category": "travel", "mcc": "7011"}
