@@ -1,4 +1,4 @@
-from typing import Protocol
+from typing import Callable, Protocol
 
 from pydantic import BaseModel
 
@@ -26,14 +26,19 @@ class BenchmarkResult(BaseModel):
     mean_tool_calls: float | None = None
 
 
-def run_benchmark(agent: _Agent, gold_rows: list[GoldRow], region: str = "US") -> BenchmarkResult:
+def run_benchmark(
+    agent: _Agent,
+    gold_rows: list[GoldRow],
+    region: str = "US",
+    judge: Callable[[str, str], bool] = exact_match_judge,
+) -> BenchmarkResult:
     merchant_hits = 0
     category_hits = 0
     tool_call_counts = []
 
     for row in gold_rows:
         result = agent.run(row.raw, region)
-        if exact_match_judge(result.merchant, row.merchant):
+        if judge(result.merchant, row.merchant):
             merchant_hits += 1
         if result.category.value == row.category:
             category_hits += 1

@@ -34,3 +34,37 @@
 {"key": "at&t*bill payment", "canonical": "AT&T", "category": "rent_and_utilities", "mcc": "4814"}
 {"key": "comcast", "canonical": "Comcast", "category": "rent_and_utilities", "mcc": "4899"}
 {"key": "comcast cable comm", "canonical": "Comcast", "category": "rent_and_utilities", "mcc": "4899"}
+{"key": "home depot", "canonical": "Home Depot", "category": "home_improvement", "mcc": "5211"}
+{"key": "the home depot", "canonical": "Home Depot", "category": "home_improvement", "mcc": "5211"}
+{"key": "lowes", "canonical": "Lowe's", "category": "home_improvement", "mcc": "5211"}
+{"key": "lowe's home imprvmnt", "canonical": "Lowe's", "category": "home_improvement", "mcc": "5211"}
+{"key": "great clips", "canonical": "Great Clips", "category": "personal_care", "mcc": "7230"}
+{"key": "supercuts", "canonical": "Supercuts", "category": "personal_care", "mcc": "7230"}
+{"key": "american red cross", "canonical": "American Red Cross", "category": "government_and_non_profit", "mcc": "8398"}
+{"key": "red cross", "canonical": "American Red Cross", "category": "government_and_non_profit", "mcc": "8398"}
+{"key": "h&r block", "canonical": "H&R Block", "category": "general_services", "mcc": "7276"}
+{"key": "hr block", "canonical": "H&R Block", "category": "general_services", "mcc": "7276"}
+{"key": "amc theatres", "canonical": "AMC Theatres", "category": "entertainment", "mcc": "7832"}
+{"key": "amc", "canonical": "AMC Theatres", "category": "entertainment", "mcc": "7832"}
+{"key": "costco wholesale", "canonical": "Costco", "category": "general_merchandise", "mcc": "5300"}
+{"key": "costco", "canonical": "Costco", "category": "general_merchandise", "mcc": "5300"}
+{"key": "walmart", "canonical": "Walmart", "category": "general_merchandise", "mcc": "5311"}
+{"key": "wal-mart", "canonical": "Walmart", "category": "general_merchandise", "mcc": "5311"}
+{"key": "shell oil", "canonical": "Shell", "category": "transportation", "mcc": "5541"}
+{"key": "shell", "canonical": "Shell", "category": "transportation", "mcc": "5541"}
+{"key": "exxonmobil", "canonical": "ExxonMobil", "category": "transportation", "mcc": "5541"}
+{"key": "exxon", "canonical": "ExxonMobil", "category": "transportation", "mcc": "5541"}
+{"key": "best buy", "canonical": "Best Buy", "category": "general_merchandise", "mcc": "5732"}
+{"key": "bestbuy.com", "canonical": "Best Buy", "category": "general_merchandise", "mcc": "5732"}
+{"key": "macys", "canonical": "Macy's", "category": "general_merchandise", "mcc": "5311"}
+{"key": "macy's", "canonical": "Macy's", "category": "general_merchandise", "mcc": "5311"}
+{"key": "verizon wireless", "canonical": "Verizon", "category": "rent_and_utilities", "mcc": "4814"}
+{"key": "verizon", "canonical": "Verizon", "category": "rent_and_utilities", "mcc": "4814"}
+{"key": "t-mobile", "canonical": "T-Mobile", "category": "rent_and_utilities", "mcc": "4814"}
+{"key": "tmobile", "canonical": "T-Mobile", "category": "rent_and_utilities", "mcc": "4814"}
+{"key": "chipotle mexican grill", "canonical": "Chipotle", "category": "food_and_drink", "mcc": "5812"}
+{"key": "chipotle", "canonical": "Chipotle", "category": "food_and_drink", "mcc": "5812"}
+{"key": "mcdonalds", "canonical": "McDonald's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "mcdonald's", "canonical": "McDonald's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "dunkin", "canonical": "Dunkin", "category": "food_and_drink", "mcc": "5814"}
+{"key": "dunkin donuts", "canonical": "Dunkin", "category": "food_and_drink", "mcc": "5814"}
