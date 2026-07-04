@@ -42,5 +42,9 @@ packages = ["src/matlas"]
 line-length = 100
 
 [tool.mypy]
-python_version = "3.11"
+python_version = "3.12"
 packages = ["matlas"]
+
+[[tool.mypy.overrides]]
+module = "cleanco.*"
+ignore_missing_imports = true
