@@ -48,4 +48,9 @@ MCC_TO_SHARED_CATEGORY: dict[str, SharedCategory] = {
     "4511": SharedCategory.TRAVEL,
     "6011": SharedCategory.BANK_FEES,
     "5921": SharedCategory.GENERAL_MERCHANDISE,
+    "7538": SharedCategory.TRANSPORTATION,
+    "5511": SharedCategory.TRANSPORTATION,
+    "7211": SharedCategory.GENERAL_SERVICES,
+    "4214": SharedCategory.GENERAL_SERVICES,
+    "0742": SharedCategory.GENERAL_SERVICES,
 }

@@ -192,3 +192,139 @@
 {"key": "total wine", "canonical": "Total Wine & More", "category": "general_merchandise", "mcc": "5921"}
 {"key": "total wine & more", "canonical": "Total Wine & More", "category": "general_merchandise", "mcc": "5921"}
 {"key": "bevmo", "canonical": "BevMo", "category": "general_merchandise", "mcc": "5921"}
+{"key": "doordash", "canonical": "DoorDash", "category": "food_and_drink", "mcc": "5812"}
+{"key": "dd doordash", "canonical": "DoorDash", "category": "food_and_drink", "mcc": "5812"}
+{"key": "grubhub", "canonical": "Grubhub", "category": "food_and_drink", "mcc": "5812"}
+{"key": "uber eats", "canonical": "Uber Eats", "category": "food_and_drink", "mcc": "5812"}
+{"key": "ubereats", "canonical": "Uber Eats", "category": "food_and_drink", "mcc": "5812"}
+{"key": "postmates", "canonical": "Postmates", "category": "food_and_drink", "mcc": "5812"}
+{"key": "jimmy johns", "canonical": "Jimmy John's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "jimmy john's", "canonical": "Jimmy John's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "jersey mikes", "canonical": "Jersey Mike's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "jersey mike's", "canonical": "Jersey Mike's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "culvers", "canonical": "Culver's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "culver's", "canonical": "Culver's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "sonic drive-in", "canonical": "Sonic Drive-In", "category": "food_and_drink", "mcc": "5814"}
+{"key": "sonic", "canonical": "Sonic Drive-In", "category": "food_and_drink", "mcc": "5814"}
+{"key": "arbys", "canonical": "Arby's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "arby's", "canonical": "Arby's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "zaxbys", "canonical": "Zaxby's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "zaxby's", "canonical": "Zaxby's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "raising canes", "canonical": "Raising Cane's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "raising cane's", "canonical": "Raising Cane's", "category": "food_and_drink", "mcc": "5814"}
+{"key": "heb", "canonical": "H-E-B", "category": "food_and_drink", "mcc": "5411"}
+{"key": "h-e-b", "canonical": "H-E-B", "category": "food_and_drink", "mcc": "5411"}
+{"key": "wegmans", "canonical": "Wegmans", "category": "food_and_drink", "mcc": "5411"}
+{"key": "food lion", "canonical": "Food Lion", "category": "food_and_drink", "mcc": "5411"}
+{"key": "giant eagle", "canonical": "Giant Eagle", "category": "food_and_drink", "mcc": "5411"}
+{"key": "meijer", "canonical": "Meijer", "category": "food_and_drink", "mcc": "5411"}
+{"key": "winn-dixie", "canonical": "Winn-Dixie", "category": "food_and_drink", "mcc": "5411"}
+{"key": "winn dixie", "canonical": "Winn-Dixie", "category": "food_and_drink", "mcc": "5411"}
+{"key": "76 gas station", "canonical": "76", "category": "transportation", "mcc": "5541"}
+{"key": "conoco76", "canonical": "76", "category": "transportation", "mcc": "5541"}
+{"key": "costco gas", "canonical": "Costco Gas", "category": "transportation", "mcc": "5541"}
+{"key": "costco gasoline", "canonical": "Costco Gas", "category": "transportation", "mcc": "5541"}
+{"key": "burlington", "canonical": "Burlington", "category": "general_merchandise", "mcc": "5311"}
+{"key": "burlington coat factory", "canonical": "Burlington", "category": "general_merchandise", "mcc": "5311"}
+{"key": "ross", "canonical": "Ross", "category": "general_merchandise", "mcc": "5311"}
+{"key": "ross dress for less", "canonical": "Ross", "category": "general_merchandise", "mcc": "5311"}
+{"key": "tj maxx", "canonical": "TJ Maxx", "category": "general_merchandise", "mcc": "5311"}
+{"key": "t.j. maxx", "canonical": "TJ Maxx", "category": "general_merchandise", "mcc": "5311"}
+{"key": "marshalls", "canonical": "Marshalls", "category": "general_merchandise", "mcc": "5311"}
+{"key": "newegg", "canonical": "Newegg", "category": "general_merchandise", "mcc": "5732"}
+{"key": "spirit airlines", "canonical": "Spirit Airlines", "category": "travel", "mcc": "4511"}
+{"key": "frontier airlines", "canonical": "Frontier Airlines", "category": "travel", "mcc": "4511"}
+{"key": "allegiant air", "canonical": "Allegiant Air", "category": "travel", "mcc": "4511"}
+{"key": "allegiant", "canonical": "Allegiant Air", "category": "travel", "mcc": "4511"}
+{"key": "hyatt", "canonical": "Hyatt", "category": "travel", "mcc": "7011"}
+{"key": "hyatt hotels", "canonical": "Hyatt", "category": "travel", "mcc": "7011"}
+{"key": "holiday inn express", "canonical": "Holiday Inn Express", "category": "travel", "mcc": "7011"}
+{"key": "la quinta", "canonical": "La Quinta", "category": "travel", "mcc": "7011"}
+{"key": "la quinta inn", "canonical": "La Quinta", "category": "travel", "mcc": "7011"}
+{"key": "motel 6", "canonical": "Motel 6", "category": "travel", "mcc": "7011"}
+{"key": "red roof inn", "canonical": "Red Roof Inn", "category": "travel", "mcc": "7011"}
+{"key": "extended stay america", "canonical": "Extended Stay America", "category": "travel", "mcc": "7011"}
+{"key": "us bank", "canonical": "US Bank", "category": "bank_fees", "mcc": "6011"}
+{"key": "u.s. bank", "canonical": "US Bank", "category": "bank_fees", "mcc": "6011"}
+{"key": "pnc bank", "canonical": "PNC Bank", "category": "bank_fees", "mcc": "6011"}
+{"key": "pnc", "canonical": "PNC Bank", "category": "bank_fees", "mcc": "6011"}
+{"key": "capital one", "canonical": "Capital One", "category": "bank_fees", "mcc": "6011"}
+{"key": "td bank", "canonical": "TD Bank", "category": "bank_fees", "mcc": "6011"}
+{"key": "ally bank", "canonical": "Ally Bank", "category": "bank_fees", "mcc": "6011"}
+{"key": "allstate", "canonical": "Allstate", "category": "general_services", "mcc": "6300"}
+{"key": "farmers insurance", "canonical": "Farmers Insurance", "category": "general_services", "mcc": "6300"}
+{"key": "liberty mutual", "canonical": "Liberty Mutual", "category": "general_services", "mcc": "6300"}
+{"key": "usaa", "canonical": "USAA", "category": "general_services", "mcc": "6300"}
+{"key": "nationwide", "canonical": "Nationwide", "category": "general_services", "mcc": "6300"}
+{"key": "nationwide insurance", "canonical": "Nationwide", "category": "general_services", "mcc": "6300"}
+{"key": "national grid", "canonical": "National Grid", "category": "rent_and_utilities", "mcc": "4900"}
+{"key": "duke energy", "canonical": "Duke Energy", "category": "rent_and_utilities", "mcc": "4900"}
+{"key": "socal edison", "canonical": "Southern California Edison", "category": "rent_and_utilities", "mcc": "4900"}
+{"key": "southern california edison", "canonical": "Southern California Edison", "category": "rent_and_utilities", "mcc": "4900"}
+{"key": "xcel energy", "canonical": "Xcel Energy", "category": "rent_and_utilities", "mcc": "4900"}
+{"key": "alamo", "canonical": "Alamo Rent A Car", "category": "travel", "mcc": "7512"}
+{"key": "alamo rent a car", "canonical": "Alamo Rent A Car", "category": "travel", "mcc": "7512"}
+{"key": "national car rental", "canonical": "National Car Rental", "category": "travel", "mcc": "7512"}
+{"key": "thrifty", "canonical": "Thrifty Car Rental", "category": "travel", "mcc": "7512"}
+{"key": "thrifty car rental", "canonical": "Thrifty Car Rental", "category": "travel", "mcc": "7512"}
+{"key": "dollar rent a car", "canonical": "Dollar Rent A Car", "category": "travel", "mcc": "7512"}
+{"key": "dollar car rental", "canonical": "Dollar Rent A Car", "category": "travel", "mcc": "7512"}
+{"key": "h&m", "canonical": "H&M", "category": "general_merchandise", "mcc": "5651"}
+{"key": "h & m", "canonical": "H&M", "category": "general_merchandise", "mcc": "5651"}
+{"key": "zara", "canonical": "Zara", "category": "general_merchandise", "mcc": "5651"}
+{"key": "uniqlo", "canonical": "Uniqlo", "category": "general_merchandise", "mcc": "5651"}
+{"key": "forever 21", "canonical": "Forever 21", "category": "general_merchandise", "mcc": "5651"}
+{"key": "express", "canonical": "Express", "category": "general_merchandise", "mcc": "5651"}
+{"key": "express inc", "canonical": "Express", "category": "general_merchandise", "mcc": "5651"}
+{"key": "jcrew", "canonical": "J.Crew", "category": "general_merchandise", "mcc": "5651"}
+{"key": "j.crew", "canonical": "J.Crew", "category": "general_merchandise", "mcc": "5651"}
+{"key": "vans", "canonical": "Vans", "category": "general_merchandise", "mcc": "5661"}
+{"key": "vans store", "canonical": "Vans", "category": "general_merchandise", "mcc": "5661"}
+{"key": "journeys", "canonical": "Journeys", "category": "general_merchandise", "mcc": "5661"}
+{"key": "academy sports", "canonical": "Academy Sports + Outdoors", "category": "general_merchandise", "mcc": "5941"}
+{"key": "academy sports + outdoors", "canonical": "Academy Sports + Outdoors", "category": "general_merchandise", "mcc": "5941"}
+{"key": "rei", "canonical": "REI", "category": "general_merchandise", "mcc": "5941"}
+{"key": "rei co-op", "canonical": "REI", "category": "general_merchandise", "mcc": "5941"}
+{"key": "big 5", "canonical": "Big 5 Sporting Goods", "category": "general_merchandise", "mcc": "5941"}
+{"key": "big 5 sporting goods", "canonical": "Big 5 Sporting Goods", "category": "general_merchandise", "mcc": "5941"}
+{"key": "books-a-million", "canonical": "Books-A-Million", "category": "general_merchandise", "mcc": "5942"}
+{"key": "books a million", "canonical": "Books-A-Million", "category": "general_merchandise", "mcc": "5942"}
+{"key": "ftd", "canonical": "FTD", "category": "general_merchandise", "mcc": "5992"}
+{"key": "ftd.com", "canonical": "FTD", "category": "general_merchandise", "mcc": "5992"}
+{"key": "proflowers", "canonical": "ProFlowers", "category": "general_merchandise", "mcc": "5992"}
+{"key": "wawa", "canonical": "Wawa", "category": "food_and_drink", "mcc": "5499"}
+{"key": "quiktrip", "canonical": "QuikTrip", "category": "food_and_drink", "mcc": "5499"}
+{"key": "qt", "canonical": "QuikTrip", "category": "food_and_drink", "mcc": "5499"}
+{"key": "sheetz", "canonical": "Sheetz", "category": "food_and_drink", "mcc": "5499"}
+{"key": "caseys", "canonical": "Casey's General Store", "category": "food_and_drink", "mcc": "5499"}
+{"key": "casey's general store", "canonical": "Casey's General Store", "category": "food_and_drink", "mcc": "5499"}
+{"key": "wayfair", "canonical": "Wayfair", "category": "general_merchandise", "mcc": "5712"}
+{"key": "crate & barrel", "canonical": "Crate & Barrel", "category": "general_merchandise", "mcc": "5712"}
+{"key": "crate and barrel", "canonical": "Crate & Barrel", "category": "general_merchandise", "mcc": "5712"}
+{"key": "pottery barn", "canonical": "Pottery Barn", "category": "general_merchandise", "mcc": "5712"}
+{"key": "west elm", "canonical": "West Elm", "category": "general_merchandise", "mcc": "5712"}
+{"key": "advance auto parts", "canonical": "Advance Auto Parts", "category": "transportation", "mcc": "5533"}
+{"key": "napa auto parts", "canonical": "NAPA Auto Parts", "category": "transportation", "mcc": "5533"}
+{"key": "napa", "canonical": "NAPA Auto Parts", "category": "transportation", "mcc": "5533"}
+{"key": "firestone", "canonical": "Firestone Complete Auto Care", "category": "transportation", "mcc": "7538"}
+{"key": "firestone complete auto care", "canonical": "Firestone Complete Auto Care", "category": "transportation", "mcc": "7538"}
+{"key": "midas", "canonical": "Midas", "category": "transportation", "mcc": "7538"}
+{"key": "midas auto service", "canonical": "Midas", "category": "transportation", "mcc": "7538"}
+{"key": "jiffy lube", "canonical": "Jiffy Lube", "category": "transportation", "mcc": "7538"}
+{"key": "pep boys", "canonical": "Pep Boys", "category": "transportation", "mcc": "7538"}
+{"key": "carmax", "canonical": "CarMax", "category": "transportation", "mcc": "5511"}
+{"key": "autonation", "canonical": "AutoNation", "category": "transportation", "mcc": "5511"}
+{"key": "1-800-got-junk", "canonical": "1-800-Got-Junk", "category": "general_services", "mcc": "4214"}
+{"key": "1800gotjunk", "canonical": "1-800-Got-Junk", "category": "general_services", "mcc": "4214"}
+{"key": "u-haul", "canonical": "U-Haul", "category": "general_services", "mcc": "4214"}
+{"key": "uhaul", "canonical": "U-Haul", "category": "general_services", "mcc": "4214"}
+{"key": "pods", "canonical": "PODS", "category": "general_services", "mcc": "4214"}
+{"key": "pods moving", "canonical": "PODS", "category": "general_services", "mcc": "4214"}
+{"key": "tide cleaners", "canonical": "Tide Cleaners", "category": "general_services", "mcc": "7211"}
+{"key": "zips dry cleaners", "canonical": "Zips Dry Cleaners", "category": "general_services", "mcc": "7211"}
+{"key": "zips cleaners", "canonical": "Zips Dry Cleaners", "category": "general_services", "mcc": "7211"}
+{"key": "banfield pet hospital", "canonical": "Banfield Pet Hospital", "category": "general_services", "mcc": "0742"}
+{"key": "banfield", "canonical": "Banfield Pet Hospital", "category": "general_services", "mcc": "0742"}
+{"key": "vca animal hospital", "canonical": "VCA Animal Hospital", "category": "general_services", "mcc": "0742"}
+{"key": "vca", "canonical": "VCA Animal Hospital", "category": "general_services", "mcc": "0742"}
+{"key": "ally financial", "canonical": "Ally Bank", "category": "bank_fees", "mcc": "6011"}
