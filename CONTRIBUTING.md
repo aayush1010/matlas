@@ -135,8 +135,8 @@ find yourself editing them, the seam is being violated; stop and ask.
 
 Ship it with: normalizer tests, resolver tests (exact / fuzzy / unknown),
 a pack-level normalize→resolve test, and a gazetteer big enough to prove
-the pack works (India launched with 23 rows — the bar is honesty, not
-size).
+the pack works (India launched with 23 rows, now 186 — the bar is
+honesty, not size).
 
 ## Style
 

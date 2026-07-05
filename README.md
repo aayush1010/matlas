@@ -78,6 +78,13 @@ The core is region-agnostic; regions plug in as swappable `RegionPack`s.
 That asymmetry is deliberate. We'd rather tell you what we can't measure
 than invent a number.
 
+Both gazetteers also recognize banks, not just merchants: US descriptors
+resolve 9 major banks (Chase, Bank of America, Wells Fargo, Citibank, US
+Bank, PNC, Capital One, TD Bank, Ally) to `bank_fees`. On the India side,
+`vpa_handles.py` maps 24 UPI PSP handle suffixes (`@okhdfcbank`, `@ybl`,
+`@sbi`, ...) to their issuing bank — a separate lookup from the merchant
+gazetteer, since it identifies *who moved the money*, not who got paid.
+
 ## Install
 
 ```bash
@@ -96,6 +103,18 @@ the agent loop (CLI, API, MCP). The offline test suite
 (`pytest tests --ignore=tests/live`) needs no key — the agent loop is
 tested against replayed response cassettes, which is also what keeps CI
 green without secrets.
+
+**Config** (all optional, `MATLAS_` env prefix):
+
+| Var | Default | What it does |
+|---|---|---|
+| `MATLAS_MODEL_HARD` | `claude-sonnet-5` | model for the main agent loop |
+| `MATLAS_MODEL_CHEAP` | `claude-haiku-4-5-20251001` | model for cheap-tier batch confirms |
+| `MATLAS_JUDGE_MODEL` | `claude-sonnet-5` | model for the eval harness's LLM judge |
+| `MATLAS_CONFIDENCE_THRESHOLD` | `0.5` | floor below which a result is flagged `is_unknown` |
+| `MATLAS_MAX_AGENT_ITERATIONS` | `6` | hard cap on the tool-use loop before returning `UNKNOWN` |
+| `MATLAS_ENABLE_WEB_SEARCH` | `false` | let the agent fall back to a web-search tool call on unresolved merchants |
+| `MATLAS_WEB_SEARCH_MAX_USES` | `3` | cap on web-search calls per transaction, if enabled |
 
 ## Using it
 
