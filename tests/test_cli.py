@@ -117,3 +117,16 @@ def test_enrich_csv_rejects_missing_column(tmp_path):
     result = runner.invoke(cli_module.app, ["enrich-csv", str(src)])
     assert result.exit_code != 0
     assert "descriptor" in result.output
+
+
+def test_merchants_lists_gazetteer_by_category():
+    result = runner.invoke(cli_module.app, ["merchants", "--region", "india"])
+    assert result.exit_code == 0
+    assert "Swiggy" in result.output
+    assert "food_and_drink" in result.output
+    assert "merchants (india)" in result.output
+
+
+def test_merchants_rejects_unknown_region():
+    result = runner.invoke(cli_module.app, ["merchants", "--region", "de"])
+    assert result.exit_code != 0

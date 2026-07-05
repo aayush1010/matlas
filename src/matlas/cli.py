@@ -72,6 +72,36 @@ def enrich_csv(
 
 
 @app.command()
+def merchants(
+    region: str = typer.Option("us", "--region", help="'us' or 'india'"),
+) -> None:
+    """List the merchants the region's gazetteer currently recognizes."""
+    import json
+    from importlib import resources
+
+    pkg = {"us": ("matlas.regions.us", "gazetteer.us.jsonl"),
+           "india": ("matlas.regions.india", "gazetteer.in.jsonl")}.get(region.lower())
+    if pkg is None:
+        raise typer.BadParameter("region must be 'us' or 'india'")
+
+    by_category: dict[str, set[str]] = {}
+    with resources.files(pkg[0]).joinpath(pkg[1]).open() as f:
+        for line in f:
+            if line.strip():
+                row = json.loads(line)
+                by_category.setdefault(row["category"], set()).add(row["canonical"])
+
+    total = 0
+    for category in sorted(by_category):
+        names = sorted(by_category[category])
+        total += len(names)
+        typer.echo(f"\n{category} ({len(names)})")
+        for name in names:
+            typer.echo(f"  {name}")
+    typer.echo(f"\n{total} merchants ({region})")
+
+
+@app.command()
 def serve(
     api: bool = typer.Option(False, "--api", help="Serve the REST API (FastAPI/uvicorn)"),
     mcp: bool = typer.Option(False, "--mcp", help="Serve the MCP server (stdio transport)"),

@@ -109,6 +109,10 @@ matlas enrich "UPI/DR/408123456789/SWIGGY/YESB/Payment for order" --region india
 `--region` accepts `auto` (default — detected from the descriptor's shape),
 `us`, or `india`.
 
+Wondering which merchants resolve without the LLM? `matlas merchants
+--region us` (or `india`) prints the current gazetteer grouped by
+category — it reads the shipped data, so it's never out of date.
+
 **Bulk CSV** — the realistic path. Nobody enriches one transaction at a
 time; you have a statement export or a feed dump. Point matlas at a CSV
 with a descriptor column and it runs every row through the cost-tiered
