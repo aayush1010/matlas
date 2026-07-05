@@ -167,9 +167,11 @@ path, it never leaves your machine at all.
 
 The highest-leverage contribution is gold-set rows: real (anonymized)
 descriptor shapes, especially Indian bank narrations, where no public
-corpus exists. `scripts/build_gazetteer_us.py` and
-`scripts/build_gazetteer_in.py` show the pattern — curated entries, every
-US MCC verified against `iso18245` before it goes in.
+corpus exists. Second-highest: a new region pack — the whole point of the
+`RegionPack` seam is that your country's rails plug in without touching
+the core. [CONTRIBUTING.md](CONTRIBUTING.md) walks through both, including
+the data-honesty rules (every US MCC verified against `iso18245`, no
+invented benchmarks).
 
 ## Status
 
