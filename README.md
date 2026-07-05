@@ -152,6 +152,12 @@ render_report(run_benchmark(agent, load_gold()))
 
 Judging defaults to exact match; an LLM-as-judge (cheap model, one-turn
 same-merchant check) is available for fuzzy merchant-name comparison.
+
+The report includes a confidence-calibration table — predictions bucketed
+by reported confidence, each bucket's mean confidence side by side with
+its actual accuracy. When matlas says 0.9, that table is how you check it
+was right about nine times in ten. Calibration here is measured, never
+tuned blind.
 India results are labeled a *portability smoke test* in the report output,
 never an accuracy benchmark — see above.
 

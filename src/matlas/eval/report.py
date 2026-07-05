@@ -14,3 +14,18 @@ def render_report(result: BenchmarkResult, title: str = "matlas benchmark") -> N
     if result.mean_tool_calls is not None:
         table.add_row("mean tool calls/txn", f"{result.mean_tool_calls:.2f}")
     Console().print(table)
+
+    if result.calibration:
+        cal = Table(title="confidence calibration (said vs. was right)")
+        cal.add_column("confidence bucket")
+        cal.add_column("n")
+        cal.add_column("mean confidence")
+        cal.add_column("category accuracy")
+        for b in result.calibration:
+            cal.add_row(
+                f"[{b.lo:.2f}, {b.hi:.2f})",
+                str(b.n),
+                f"{b.mean_confidence:.2f}",
+                f"{b.category_accuracy:.1%}",
+            )
+        Console().print(cal)
