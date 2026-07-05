@@ -157,6 +157,13 @@ misses). It is not a claim about messy real-world descriptors with store
 numbers, truncation, and processor prefixes — building a gold set of
 those is the highest-leverage open contribution (see below).
 
+India ran the same way — 186 fixture rows, 99.5% merchant / 100.0%
+category — but that result is labeled a **portability smoke test**, not
+a benchmark: the fixture is our own gazetteer, so it proves the UPI
+pipeline holds together end to end, nothing more. (Running it live was
+still worth it: it caught the model emitting `"Travel"` where the
+category enum expected `"travel"`, a crash no offline test had hit.)
+
 The eval harness runs the gold set (the same curated gazetteer rows,
 330 US + 186 India) through the full agent loop and reports per-field
 accuracy plus mean tool calls per transaction:

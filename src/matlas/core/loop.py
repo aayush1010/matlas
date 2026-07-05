@@ -109,7 +109,11 @@ class EnrichmentAgent:
                     resolved = self.pack.resolve(normalized)
 
                 proposed = self._parse_final(response)
-                proposed_category = SharedCategory(proposed.category)
+                try:
+                    # live models sometimes emit "Travel" instead of "travel"
+                    proposed_category = SharedCategory(proposed.category.strip().lower())
+                except ValueError:
+                    proposed_category = SharedCategory.UNKNOWN
                 verdict = validate(
                     proposed_category, proposed.confidence, resolved, consistency_applicable
                 )

@@ -51,6 +51,20 @@ def test_straightforward_agreement():
     assert result.is_unknown is False
 
 
+def test_capitalized_category_from_model_still_maps_to_enum():
+    # live India run crashed on 'Travel' != 'travel'; enum lookup must be case-insensitive
+    text = '{"merchant": "Starbucks", "category": "Food_And_Drink", "confidence": 0.9}'
+    block = SimpleNamespace(type="text", text=text)
+    responses = [
+        _tool_use_response(),
+        SimpleNamespace(stop_reason="end_turn", content=[block]),
+    ]
+    agent = _agent(responses)
+    result = agent.run(RAW, "US")
+    assert result.category is SharedCategory.FOOD_AND_DRINK
+    assert result.is_unknown is False
+
+
 def test_final_answer_wrapped_in_markdown_fence_still_parses():
     responses = [
         _tool_use_response(),
