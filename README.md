@@ -103,6 +103,21 @@ matlas enrich "UPI/DR/408123456789/SWIGGY/YESB/Payment for order" --region india
 `--region` accepts `auto` (default — detected from the descriptor's shape),
 `us`, or `india`.
 
+**Bulk CSV** — the realistic path. Nobody enriches one transaction at a
+time; you have a statement export or a feed dump. Point matlas at a CSV
+with a descriptor column and it runs every row through the cost-tiered
+batch path (exact gazetteer hits never touch the LLM — a file of known
+merchants costs nothing and needs no API key):
+
+```bash
+matlas enrich-csv transactions.csv --column descriptor --out enriched.csv
+```
+
+Output is the input CSV with `merchant`, `category`, `confidence`, and
+`is_unknown` columns appended. Bank gave you a PDF? Export the CSV from
+your net-banking portal instead — every major bank offers it, and PDF
+table extraction is a different problem than transaction enrichment.
+
 **REST API** (`matlas serve --api`, FastAPI on :8000):
 
 ```

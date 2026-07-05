@@ -82,3 +82,38 @@ def test_serve_mcp_calls_mcp_run(monkeypatch):
     result = runner.invoke(cli_module.app, ["serve", "--mcp"])
     assert result.exit_code == 0
     assert called == {"ran": True}
+
+
+def test_enrich_csv_writes_enriched_columns(monkeypatch, tmp_path):
+    import matlas.batch as batch_module
+
+    def fake_tiered(descriptor, settings, packs, region_override=None):
+        return EnrichedTransaction(
+            raw=descriptor,
+            region="US",
+            rail="card",
+            merchant="Starbucks",
+            category="food_and_drink",
+            confidence=0.9,
+            consistency_check_applicable=True,
+            consistency_ok=True,
+            evidence=[],
+            is_unknown=False,
+        )
+
+    monkeypatch.setattr(batch_module, "enrich_one_tiered", fake_tiered)
+    src = tmp_path / "txns.csv"
+    src.write_text("date,descriptor\n2026-01-01,SQ *STARBUCKS #4521\n")
+    result = runner.invoke(cli_module.app, ["enrich-csv", str(src)])
+    assert result.exit_code == 0, result.output
+    out = (tmp_path / "txns.enriched.csv").read_text()
+    assert "merchant" in out.splitlines()[0]
+    assert "Starbucks" in out and "food_and_drink" in out and "2026-01-01" in out
+
+
+def test_enrich_csv_rejects_missing_column(tmp_path):
+    src = tmp_path / "txns.csv"
+    src.write_text("date,amount\n2026-01-01,4.50\n")
+    result = runner.invoke(cli_module.app, ["enrich-csv", str(src)])
+    assert result.exit_code != 0
+    assert "descriptor" in result.output
