@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="300" viewBox="0 0 920 300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="920" height="300" fill="#ffffff"/>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <!-- Stage 1: raw descriptor -->
+  <rect x="20" y="110" width="150" height="80" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="95" y="142" text-anchor="middle" font-size="13" font-weight="600" fill="#24292f">Raw descriptor</text>
+  <text x="95" y="162" text-anchor="middle" font-size="10.5" fill="#57606a">SQ *STARBUCKS</text>
+  <text x="95" y="176" text-anchor="middle" font-size="10.5" fill="#57606a">#4521 SEATTLE WA</text>
+
+  <line x1="170" y1="150" x2="212" y2="150" stroke="#57606a" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 2: LLM proposes -->
+  <rect x="215" y="100" width="170" height="100" rx="10" fill="#eef4ff" stroke="#b6d0f7" stroke-width="1.5"/>
+  <text x="300" y="135" text-anchor="middle" font-size="13" font-weight="600" fill="#1a56c4">LLM proposes</text>
+  <text x="300" y="156" text-anchor="middle" font-size="10.5" fill="#3a5a8c">"Starbucks"</text>
+  <text x="300" y="170" text-anchor="middle" font-size="10.5" fill="#3a5a8c">food_and_drink</text>
+  <text x="300" y="187" text-anchor="middle" font-size="9.5" fill="#6b84a8">confidence 0.9</text>
+
+  <line x1="385" y1="150" x2="427" y2="150" stroke="#57606a" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 3: resolver checks -->
+  <rect x="430" y="100" width="190" height="100" rx="10" fill="#fff4e5" stroke="#f5c680" stroke-width="1.5"/>
+  <text x="525" y="130" text-anchor="middle" font-size="13" font-weight="600" fill="#9a5b00">Resolver checks</text>
+  <text x="525" y="150" text-anchor="middle" font-size="10.5" fill="#8a6a2e">gazetteer / MCC lookup</text>
+  <text x="525" y="167" text-anchor="middle" font-size="10.5" fill="#8a6a2e">deterministic tool call</text>
+  <text x="525" y="184" text-anchor="middle" font-size="9.5" fill="#a68a52">not a second LLM guess</text>
+
+  <line x1="620" y1="150" x2="662" y2="150" stroke="#57606a" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 4: validator -->
+  <rect x="665" y="100" width="150" height="100" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="740" y="132" text-anchor="middle" font-size="13" font-weight="600" fill="#24292f">Validator</text>
+  <text x="740" y="153" text-anchor="middle" font-size="10.5" fill="#57606a">agree → done</text>
+  <text x="740" y="170" text-anchor="middle" font-size="10.5" fill="#57606a">contradict → retry</text>
+  <text x="740" y="186" text-anchor="middle" font-size="9.5" fill="#7a8592">(one bounded round)</text>
+
+  <line x1="815" y1="150" x2="857" y2="150" stroke="#57606a" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 5: result -->
+  <rect x="860" y="115" width="0" height="0"/>
+  <text x="890" y="145" text-anchor="middle" font-size="11" font-weight="600" fill="#1a7f37" transform="rotate(0)">✓</text>
+  <text x="890" y="162" text-anchor="middle" font-size="9" fill="#1a7f37">result</text>
+
+  <!-- self-correction loop back -->
+  <path d="M 740 100 C 740 55, 300 55, 300 100" fill="none" stroke="#cf222e" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <text x="520" y="45" text-anchor="middle" font-size="10.5" fill="#cf222e">on contradiction: one bounded retry, resolver's evidence included</text>
+
+  <!-- caption -->
+  <text x="460" y="255" text-anchor="middle" font-size="11" fill="#57606a">Every hallucination gets caught by a lookup table before it reaches your ledger — never by asking the model to guess twice.</text>
+  <text x="460" y="275" text-anchor="middle" font-size="10" fill="#8b949e">Evidence from both the LLM proposal and the resolver signal ships in the final record.</text>
+</svg>

@@ -39,6 +39,8 @@ Most LLM wrappers ask the model to guess a category and call it a day. The
 problem: models are confidently wrong about merchants, and there's no way
 to tell a good guess from a bad one.
 
+![matlas architecture: raw descriptor flows through the LLM's proposal, a deterministic resolver check, and a validator, with a bounded self-correction loop on contradiction](assets/architecture.svg)
+
 matlas splits the job in two:
 
 1. **The LLM proposes.** It reads the raw descriptor and suggests a
