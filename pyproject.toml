@@ -9,7 +9,7 @@ description = "Turn messy bank/card transaction descriptors into clean structure
 readme = "README.md"
 license = "Apache-2.0"
 requires-python = ">=3.11"
-authors = [{ name = "matlas contributors" }]
+authors = [{ name = "Aayush Mittal", email = "aayushmittal1999@gmail.com" }]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Programming Language :: Python :: 3",
@@ -24,13 +24,16 @@ dependencies = [
   "rapidfuzz>=3.14.5,<4",
   "cleanco>=2.3,<3",
   "anthropic>=0.116.0,<1",
-  "pandas>=3.0.3,<4",
 ]
 
 [project.optional-dependencies]
 # Week 2+: api.py / mcp_server.py land later; no Week-1 file imports these.
 api = ["fastapi>=0.139.0,<1", "uvicorn>=0.49.0,<1", "mcp>=1.28.1,<2"]
 dev = ["pytest>=8", "pytest-cov", "ruff", "mypy"]
+
+[project.urls]
+Homepage = "https://github.com/aayush1010/matlas"
+Repository = "https://github.com/aayush1010/matlas"
 
 [project.scripts]
 matlas = "matlas.cli:app"
