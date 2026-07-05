@@ -138,6 +138,25 @@ transactions mid-conversation.
 
 ## Measuring it
 
+Latest full run — 330 US gold rows through the real agent loop
+(claude-sonnet-5, 2026-07-05):
+
+| metric | value |
+|---|---|
+| merchant accuracy | 99.7% |
+| category accuracy | 100.0% |
+| mean tool calls / transaction | 1.00 |
+| calibration | mean confidence 1.00, actual accuracy 100% |
+
+Read that number honestly: the gold rows are the gazetteer's own keys —
+clean canonical merchant strings, so every row exact-hits the resolver.
+This measures the agent loop's ceiling on *known* merchants (does the
+model reliably call the tool, agree with the deterministic signal, and
+emit clean output — yes, 1.00 tool calls per transaction, zero category
+misses). It is not a claim about messy real-world descriptors with store
+numbers, truncation, and processor prefixes — building a gold set of
+those is the highest-leverage open contribution (see below).
+
 The eval harness runs the gold set (the same curated gazetteer rows,
 330 US + 186 India) through the full agent loop and reports per-field
 accuracy plus mean tool calls per transaction:
