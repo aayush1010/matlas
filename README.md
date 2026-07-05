@@ -81,8 +81,14 @@ than invent a number.
 ## Install
 
 ```bash
-pip install -e ".[dev]"       # library + CLI + tests
-pip install -e ".[api,dev]"   # + REST API / MCP server
+pip install matlas          # library + CLI
+pip install "matlas[api]"   # + REST API / MCP server
+```
+
+Working on matlas itself? Clone and use an editable install instead:
+
+```bash
+pip install -e ".[api,dev]"
 ```
 
 You need an `ANTHROPIC_API_KEY` in the environment for anything that runs
@@ -138,42 +144,45 @@ transactions mid-conversation.
 
 ## Measuring it
 
-Latest full run — 330 US gold rows through the real agent loop
-(claude-sonnet-5, 2026-07-05):
+Latest full runs through the real agent loop (claude-sonnet-5,
+2026-07-05):
 
-| metric | value |
-|---|---|
-| merchant accuracy | 99.7% |
-| category accuracy | 100.0% |
-| mean tool calls / transaction | 1.00 |
-| calibration | mean confidence 1.00, actual accuracy 100% |
+|  | US (benchmark) | India (portability smoke test) |
+|---|---|---|
+| rows | 330 | 186 |
+| merchant accuracy | 99.7% | 99.5% |
+| category accuracy | 100.0% | 100.0% |
+| mean tool calls / transaction | 1.00 | 1.00 |
+| calibration | said 1.00, right 100% | said 1.00, right 100% |
 
-Read that number honestly: the gold rows are the gazetteer's own keys —
+Read those numbers honestly. The gold rows are the gazetteers' own keys —
 clean canonical merchant strings, so every row exact-hits the resolver.
 This measures the agent loop's ceiling on *known* merchants (does the
 model reliably call the tool, agree with the deterministic signal, and
 emit clean output — yes, 1.00 tool calls per transaction, zero category
-misses). It is not a claim about messy real-world descriptors with store
-numbers, truncation, and processor prefixes — building a gold set of
-those is the highest-leverage open contribution (see below).
+misses in either region). It is not a claim about messy real-world
+descriptors with store numbers, truncation, and processor prefixes —
+building a gold set of those is the highest-leverage open contribution
+(see below).
 
-India ran the same way — 186 fixture rows, 99.5% merchant / 100.0%
-category — but that result is labeled a **portability smoke test**, not
-a benchmark: the fixture is our own gazetteer, so it proves the UPI
-pipeline holds together end to end, nothing more. (Running it live was
-still worth it: it caught the model emitting `"Travel"` where the
-category enum expected `"travel"`, a crash no offline test had hit.)
+And the two columns are labeled differently on purpose: the India
+fixture is our own gazetteer with no external corpus to validate
+against, so its column is a **portability smoke test** — proof the UPI
+pipeline (narration parsing, P2P carve-out, resolver) holds together
+end to end — never an accuracy benchmark. Running it live still paid
+for itself: it caught the model emitting `"Travel"` where the category
+enum expected `"travel"`, a crash no offline test had hit.
 
 The eval harness runs the gold set (the same curated gazetteer rows,
 330 US + 186 India) through the full agent loop and reports per-field
-accuracy plus mean tool calls per transaction:
+accuracy plus mean tool calls per transaction. Reproduce the numbers
+above yourself (live API, costs real money — both scripts take an
+optional row cap for a cheap dry run first):
 
-```python
-from matlas.eval.gold import load_gold
-from matlas.eval.harness import run_benchmark
-from matlas.eval.report import render_report
-
-render_report(run_benchmark(agent, load_gold()))
+```bash
+ANTHROPIC_API_KEY=... python scripts/run_benchmark_us.py 5   # dry run
+ANTHROPIC_API_KEY=... python scripts/run_benchmark_us.py     # full 330
+ANTHROPIC_API_KEY=... python scripts/run_smoke_india.py      # full 186
 ```
 
 Judging defaults to exact match; an LLM-as-judge (cheap model, one-turn
@@ -184,8 +193,6 @@ by reported confidence, each bucket's mean confidence side by side with
 its actual accuracy. When matlas says 0.9, that table is how you check it
 was right about nine times in ten. Calibration here is measured, never
 tuned blind.
-India results are labeled a *portability smoke test* in the report output,
-never an accuracy benchmark — see above.
 
 ## Privacy stance
 
@@ -207,8 +214,11 @@ invented benchmarks).
 
 ## Status
 
-Weeks 1–3 of the build plan complete and verified end-to-end against the
-live API: agent loop, US + India packs, CLI, REST API, MCP server,
-cost-tiered batching, LLM-judge, eval harness, CI. Week 4 (launch polish,
-PyPI release) in progress. Design docs and the full build log live outside
-this repo.
+v0.1.0, on [PyPI](https://pypi.org/project/matlas/). The full stack —
+agent loop, US + India packs, CLI, REST API, MCP server, cost-tiered
+batching, eval harness — is tested offline in CI and verified end to end
+against the live API (which is how the fence-wrapped-JSON and
+case-sensitive-category bugs got caught before you hit them). Young
+project, honest scope: known-merchant coverage is 330 US + 186 India
+rows and growing, and India intentionally ships without an accuracy
+claim until a real labeled corpus exists.
