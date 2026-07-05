@@ -21,3 +21,166 @@
 {"key": "makemytrip", "canonical": "MakeMyTrip", "category": "travel"}
 {"key": "apollopharmacy", "canonical": "Apollo Pharmacy", "category": "medical"}
 {"key": "practo", "canonical": "Practo", "category": "medical"}
+{"key": "mcdonalds", "canonical": "McDonald's India", "category": "food_and_drink"}
+{"key": "mcdonaldsindia", "canonical": "McDonald's India", "category": "food_and_drink"}
+{"key": "kfcindia", "canonical": "KFC India", "category": "food_and_drink"}
+{"key": "kfc india", "canonical": "KFC India", "category": "food_and_drink"}
+{"key": "burgerking", "canonical": "Burger King India", "category": "food_and_drink"}
+{"key": "burger king", "canonical": "Burger King India", "category": "food_and_drink"}
+{"key": "pizzahut", "canonical": "Pizza Hut India", "category": "food_and_drink"}
+{"key": "pizza hut", "canonical": "Pizza Hut India", "category": "food_and_drink"}
+{"key": "haldirams", "canonical": "Haldiram's", "category": "food_and_drink"}
+{"key": "haldiram", "canonical": "Haldiram's", "category": "food_and_drink"}
+{"key": "barbequenation", "canonical": "Barbeque Nation", "category": "food_and_drink"}
+{"key": "barbeque nation", "canonical": "Barbeque Nation", "category": "food_and_drink"}
+{"key": "cafecoffeeday", "canonical": "Cafe Coffee Day", "category": "food_and_drink"}
+{"key": "cafe coffee day", "canonical": "Cafe Coffee Day", "category": "food_and_drink"}
+{"key": "ccdcafe", "canonical": "Cafe Coffee Day", "category": "food_and_drink"}
+{"key": "starbucksindia", "canonical": "Starbucks India", "category": "food_and_drink"}
+{"key": "tatastarbucks", "canonical": "Starbucks India", "category": "food_and_drink"}
+{"key": "dunzo", "canonical": "Dunzo", "category": "food_and_drink"}
+{"key": "licious", "canonical": "Licious", "category": "food_and_drink"}
+{"key": "wowmomo", "canonical": "Wow! Momo", "category": "food_and_drink"}
+{"key": "wow momo", "canonical": "Wow! Momo", "category": "food_and_drink"}
+{"key": "chaayos", "canonical": "Chaayos", "category": "food_and_drink"}
+{"key": "bluetokai", "canonical": "Blue Tokai Coffee", "category": "food_and_drink"}
+{"key": "blue tokai", "canonical": "Blue Tokai Coffee", "category": "food_and_drink"}
+{"key": "theobroma", "canonical": "Theobroma", "category": "food_and_drink"}
+{"key": "eatsure", "canonical": "EatSure", "category": "food_and_drink"}
+{"key": "behrouz", "canonical": "Behrouz Biryani", "category": "food_and_drink"}
+{"key": "behrouzbiryani", "canonical": "Behrouz Biryani", "category": "food_and_drink"}
+{"key": "dmart", "canonical": "DMart", "category": "food_and_drink"}
+{"key": "avenuesupermarts", "canonical": "DMart", "category": "food_and_drink"}
+{"key": "jiomart", "canonical": "JioMart", "category": "food_and_drink"}
+{"key": "reliancefresh", "canonical": "Reliance Fresh", "category": "food_and_drink"}
+{"key": "reliance fresh", "canonical": "Reliance Fresh", "category": "food_and_drink"}
+{"key": "naturesbasket", "canonical": "Nature's Basket", "category": "food_and_drink"}
+{"key": "natures basket", "canonical": "Nature's Basket", "category": "food_and_drink"}
+{"key": "spencers", "canonical": "Spencer's Retail", "category": "food_and_drink"}
+{"key": "spencersretail", "canonical": "Spencer's Retail", "category": "food_and_drink"}
+{"key": "moreretail", "canonical": "More Supermarket", "category": "food_and_drink"}
+{"key": "more supermarket", "canonical": "More Supermarket", "category": "food_and_drink"}
+{"key": "indianoil", "canonical": "Indian Oil", "category": "transportation"}
+{"key": "iocl", "canonical": "Indian Oil", "category": "transportation"}
+{"key": "bharatpetroleum", "canonical": "Bharat Petroleum", "category": "transportation"}
+{"key": "bpcl", "canonical": "Bharat Petroleum", "category": "transportation"}
+{"key": "hindustanpetroleum", "canonical": "Hindustan Petroleum", "category": "transportation"}
+{"key": "hpcl", "canonical": "Hindustan Petroleum", "category": "transportation"}
+{"key": "blusmart", "canonical": "BluSmart", "category": "transportation"}
+{"key": "merucabs", "canonical": "Meru Cabs", "category": "transportation"}
+{"key": "meru cabs", "canonical": "Meru Cabs", "category": "transportation"}
+{"key": "fastag", "canonical": "FASTag Recharge", "category": "transportation"}
+{"key": "delhimetro", "canonical": "Delhi Metro", "category": "transportation"}
+{"key": "dmrc", "canonical": "Delhi Metro", "category": "transportation"}
+{"key": "nammametro", "canonical": "Namma Metro", "category": "transportation"}
+{"key": "bmrcl", "canonical": "Namma Metro", "category": "transportation"}
+{"key": "spotifyindia", "canonical": "Spotify India", "category": "entertainment"}
+{"key": "spotify", "canonical": "Spotify India", "category": "entertainment"}
+{"key": "sonyliv", "canonical": "SonyLIV", "category": "entertainment"}
+{"key": "zee5", "canonical": "ZEE5", "category": "entertainment"}
+{"key": "jiocinema", "canonical": "JioCinema", "category": "entertainment"}
+{"key": "pvrcinemas", "canonical": "PVR Cinemas", "category": "entertainment"}
+{"key": "pvr cinemas", "canonical": "PVR Cinemas", "category": "entertainment"}
+{"key": "inoxmovies", "canonical": "INOX Movies", "category": "entertainment"}
+{"key": "inox movies", "canonical": "INOX Movies", "category": "entertainment"}
+{"key": "primevideo", "canonical": "Amazon Prime Video", "category": "entertainment"}
+{"key": "prime video", "canonical": "Amazon Prime Video", "category": "entertainment"}
+{"key": "wonderla", "canonical": "Wonderla", "category": "entertainment"}
+{"key": "ajio", "canonical": "AJIO", "category": "general_merchandise"}
+{"key": "nykaa", "canonical": "Nykaa", "category": "general_merchandise"}
+{"key": "meesho", "canonical": "Meesho", "category": "general_merchandise"}
+{"key": "snapdeal", "canonical": "Snapdeal", "category": "general_merchandise"}
+{"key": "tatacliq", "canonical": "Tata CLiQ", "category": "general_merchandise"}
+{"key": "croma", "canonical": "Croma", "category": "general_merchandise"}
+{"key": "reliancedigital", "canonical": "Reliance Digital", "category": "general_merchandise"}
+{"key": "reliance digital", "canonical": "Reliance Digital", "category": "general_merchandise"}
+{"key": "decathlon", "canonical": "Decathlon India", "category": "general_merchandise"}
+{"key": "lenskart", "canonical": "Lenskart", "category": "general_merchandise"}
+{"key": "firstcry", "canonical": "FirstCry", "category": "general_merchandise"}
+{"key": "pepperfry", "canonical": "Pepperfry", "category": "general_merchandise"}
+{"key": "urbanladder", "canonical": "Urban Ladder", "category": "general_merchandise"}
+{"key": "urban ladder", "canonical": "Urban Ladder", "category": "general_merchandise"}
+{"key": "boatlifestyle", "canonical": "boAt Lifestyle", "category": "general_merchandise"}
+{"key": "imaginemarketing", "canonical": "boAt Lifestyle", "category": "general_merchandise"}
+{"key": "shoppersstop", "canonical": "Shoppers Stop", "category": "general_merchandise"}
+{"key": "shoppers stop", "canonical": "Shoppers Stop", "category": "general_merchandise"}
+{"key": "westside", "canonical": "Westside", "category": "general_merchandise"}
+{"key": "maxfashion", "canonical": "Max Fashion", "category": "general_merchandise"}
+{"key": "max fashion", "canonical": "Max Fashion", "category": "general_merchandise"}
+{"key": "pantaloons", "canonical": "Pantaloons", "category": "general_merchandise"}
+{"key": "fabindia", "canonical": "Fabindia", "category": "general_merchandise"}
+{"key": "titancompany", "canonical": "Titan", "category": "general_merchandise"}
+{"key": "titan watches", "canonical": "Titan", "category": "general_merchandise"}
+{"key": "tanishq", "canonical": "Tanishq", "category": "general_merchandise"}
+{"key": "bataindia", "canonical": "Bata India", "category": "general_merchandise"}
+{"key": "bata india", "canonical": "Bata India", "category": "general_merchandise"}
+{"key": "bsnl", "canonical": "BSNL", "category": "rent_and_utilities"}
+{"key": "tatapower", "canonical": "Tata Power", "category": "rent_and_utilities"}
+{"key": "tata power", "canonical": "Tata Power", "category": "rent_and_utilities"}
+{"key": "adanielectricity", "canonical": "Adani Electricity", "category": "rent_and_utilities"}
+{"key": "adani electricity", "canonical": "Adani Electricity", "category": "rent_and_utilities"}
+{"key": "bescom", "canonical": "BESCOM", "category": "rent_and_utilities"}
+{"key": "msedcl", "canonical": "MSEDCL", "category": "rent_and_utilities"}
+{"key": "mahadiscom", "canonical": "MSEDCL", "category": "rent_and_utilities"}
+{"key": "torrentpower", "canonical": "Torrent Power", "category": "rent_and_utilities"}
+{"key": "torrent power", "canonical": "Torrent Power", "category": "rent_and_utilities"}
+{"key": "actfibernet", "canonical": "ACT Fibernet", "category": "rent_and_utilities"}
+{"key": "act fibernet", "canonical": "ACT Fibernet", "category": "rent_and_utilities"}
+{"key": "hathway", "canonical": "Hathway", "category": "rent_and_utilities"}
+{"key": "tataplay", "canonical": "Tata Play", "category": "rent_and_utilities"}
+{"key": "tatasky", "canonical": "Tata Play", "category": "rent_and_utilities"}
+{"key": "indraprasthagas", "canonical": "Indraprastha Gas", "category": "rent_and_utilities"}
+{"key": "igl gas", "canonical": "Indraprastha Gas", "category": "rent_and_utilities"}
+{"key": "mahanagargas", "canonical": "Mahanagar Gas", "category": "rent_and_utilities"}
+{"key": "mahanagar gas", "canonical": "Mahanagar Gas", "category": "rent_and_utilities"}
+{"key": "indanegas", "canonical": "Indane Gas", "category": "rent_and_utilities"}
+{"key": "indane gas", "canonical": "Indane Gas", "category": "rent_and_utilities"}
+{"key": "goibibo", "canonical": "Goibibo", "category": "travel"}
+{"key": "cleartrip", "canonical": "Cleartrip", "category": "travel"}
+{"key": "yatraonline", "canonical": "Yatra", "category": "travel"}
+{"key": "yatra.com", "canonical": "Yatra", "category": "travel"}
+{"key": "ixigo", "canonical": "ixigo", "category": "travel"}
+{"key": "redbus", "canonical": "redBus", "category": "travel"}
+{"key": "indigoairlines", "canonical": "IndiGo", "category": "travel"}
+{"key": "interglobeaviation", "canonical": "IndiGo", "category": "travel"}
+{"key": "goindigo", "canonical": "IndiGo", "category": "travel"}
+{"key": "airindia", "canonical": "Air India", "category": "travel"}
+{"key": "air india", "canonical": "Air India", "category": "travel"}
+{"key": "spicejet", "canonical": "SpiceJet", "category": "travel"}
+{"key": "akasaair", "canonical": "Akasa Air", "category": "travel"}
+{"key": "akasa air", "canonical": "Akasa Air", "category": "travel"}
+{"key": "vistara", "canonical": "Vistara", "category": "travel"}
+{"key": "oyorooms", "canonical": "OYO Rooms", "category": "travel"}
+{"key": "oyo rooms", "canonical": "OYO Rooms", "category": "travel"}
+{"key": "treebo", "canonical": "Treebo Hotels", "category": "travel"}
+{"key": "treebohotels", "canonical": "Treebo Hotels", "category": "travel"}
+{"key": "fabhotels", "canonical": "FabHotels", "category": "travel"}
+{"key": "netmeds", "canonical": "Netmeds", "category": "medical"}
+{"key": "pharmeasy", "canonical": "PharmEasy", "category": "medical"}
+{"key": "tata1mg", "canonical": "Tata 1mg", "category": "medical"}
+{"key": "1mg healthcare", "canonical": "Tata 1mg", "category": "medical"}
+{"key": "medplusmart", "canonical": "MedPlus", "category": "medical"}
+{"key": "medplus pharmacy", "canonical": "MedPlus", "category": "medical"}
+{"key": "maxhealthcare", "canonical": "Max Healthcare", "category": "medical"}
+{"key": "max healthcare", "canonical": "Max Healthcare", "category": "medical"}
+{"key": "fortishealthcare", "canonical": "Fortis Healthcare", "category": "medical"}
+{"key": "fortis healthcare", "canonical": "Fortis Healthcare", "category": "medical"}
+{"key": "lalpathlabs", "canonical": "Dr Lal PathLabs", "category": "medical"}
+{"key": "dr lal pathlabs", "canonical": "Dr Lal PathLabs", "category": "medical"}
+{"key": "cultfit", "canonical": "Cult.fit", "category": "personal_care"}
+{"key": "curefit", "canonical": "Cult.fit", "category": "personal_care"}
+{"key": "lakmesalon", "canonical": "Lakme Salon", "category": "personal_care"}
+{"key": "lakme salon", "canonical": "Lakme Salon", "category": "personal_care"}
+{"key": "naturalssalon", "canonical": "Naturals Salon", "category": "personal_care"}
+{"key": "naturals salon", "canonical": "Naturals Salon", "category": "personal_care"}
+{"key": "urbancompany", "canonical": "Urban Company", "category": "general_services"}
+{"key": "urbanclap", "canonical": "Urban Company", "category": "general_services"}
+{"key": "nobroker", "canonical": "NoBroker", "category": "general_services"}
+{"key": "policybazaar", "canonical": "PolicyBazaar", "category": "general_services"}
+{"key": "licindia", "canonical": "LIC of India", "category": "general_services"}
+{"key": "lic of india", "canonical": "LIC of India", "category": "general_services"}
+{"key": "bluedart", "canonical": "Blue Dart", "category": "general_services"}
+{"key": "blue dart", "canonical": "Blue Dart", "category": "general_services"}
+{"key": "delhivery", "canonical": "Delhivery", "category": "general_services"}
+{"key": "dtdc courier", "canonical": "DTDC", "category": "general_services"}
+{"key": "dtdcindia", "canonical": "DTDC", "category": "general_services"}

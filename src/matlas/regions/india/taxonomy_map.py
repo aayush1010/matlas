@@ -14,6 +14,8 @@ INDIA_CATEGORY_TO_SHARED: dict[str, SharedCategory] = {
         SharedCategory.RENT_AND_UTILITIES,
         SharedCategory.TRAVEL,
         SharedCategory.MEDICAL,
+        SharedCategory.PERSONAL_CARE,
+        SharedCategory.GENERAL_SERVICES,
         SharedCategory.PERSONAL_TRANSFER,
     )
 }
